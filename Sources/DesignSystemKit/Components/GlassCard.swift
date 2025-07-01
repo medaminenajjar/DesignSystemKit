@@ -1,7 +1,7 @@
 import SwiftUI
 
-@available(iOS 15.0, *)
-@available(macOS 12.0, *)
+@available(iOS 26.0, *)
+@available(macOS 26.0, *)
 public struct GlassCard<Content: View>: View {
     let content: Content
     let cornerRadius: CGFloat
@@ -14,11 +14,7 @@ public struct GlassCard<Content: View>: View {
     public var body: some View {
         content
             .padding()
-            .background(.ultraThinMaterial)
+            .glassEffect()
             .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
-            .overlay(
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .strokeBorder(Color.white.opacity(0.15), lineWidth: 1)
-            )
     }
 }

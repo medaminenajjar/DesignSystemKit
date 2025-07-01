@@ -1,7 +1,7 @@
 import SwiftUI
 
-@available(iOS 15.0, *)
-@available(macOS 12.0, *)
+@available(iOS 26.0, *)
+@available(macOS 26.0, *)
 struct GlassCardPreview: View {
     var body: some View {
         ZStack {
@@ -25,8 +25,8 @@ struct GlassCardPreview: View {
     }
 }
 
-@available(iOS 15.0, *)
-@available(macOS 12.0, *)
+@available(iOS 26.0, *)
+@available(macOS 26.0, *)
 #Preview {
     GlassCardPreview()
 }

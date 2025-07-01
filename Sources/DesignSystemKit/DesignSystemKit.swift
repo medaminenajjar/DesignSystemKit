@@ -25,8 +25,8 @@ public typealias Banner = AlertBanner
 @available(iOS 13.0, *)
 @available(macOS 10.15, *)
 public typealias Card = CardView
-@available(iOS 15.0, *)
-@available(macOS 12.0, *)
+@available(iOS 26.0, *)
+@available(macOS 26.0, *)
 public typealias Glass = GlassCard
 @available(iOS 13.0, *)
 @available(macOS 10.15, *)
