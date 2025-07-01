@@ -5,19 +5,14 @@ import SwiftUI
 struct GlassCardPreview: View {
     var body: some View {
         ZStack {
-            Image("background-image") // Optional: put an image or a gradient in the background
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-
             GlassCard {
                 VStack(spacing: 12) {
                     Text("Carte Glass")
                         .font(Typography.title)
-                        .foregroundColor(.white)
+                        .foregroundColor(ColorPalette.textPrimary)
                     Text("Effet verre élégant avec fond flouté.")
                         .font(Typography.body)
-                        .foregroundColor(.white.opacity(0.8))
+                        .foregroundColor(ColorPalette.textSecondary.opacity(0.8))
                 }
             }
             .padding()
